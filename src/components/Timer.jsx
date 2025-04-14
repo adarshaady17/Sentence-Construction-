@@ -9,7 +9,6 @@ const Timer = ({ timeLeft }) => {
 
   // Debugging effect
   useEffect(() => {
-    console.log(`Time updated: ${timeLeft}s, Color: ${getColor()}`);
   }, [timeLeft]);
 
   const progressColor = getColor().replace('text', 'bg');
